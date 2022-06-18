@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+      body{
+        margin-left:100px;
+        margin-top:100px;
+      }
+    </style>
+    <title>存貨查詢</title>
+  </head>
+  <body>
+      <div class="container-fluid">	
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ttt">
+                    <h2 class="word">
+                    存貨查詢
+                    </h2>   
+                    <hr>                 
+                      <a class="btn btn-primary btn-large" style="position:relative;top:-80px; left:480px;background-color: #475b84;border-color: #475b84;" href="backgoods.html">重新整理</a>
+                    <p>
+                        <span style="font-size:20px; font-weight: bold;">商品編號：</span>
+                        <input type="text" name="name" class="form-control" placeholder=" ">&nbsp;&nbsp;
+                        <br>
+                        <span style="font-size:20px; font-weight: bold;">商品名稱：</span>
+                        <input type="text" name="name" class="form-control" placeholder=" ">&nbsp;&nbsp;
+                        <br>
+                        <div class="ps">
+                        </div>
+                            <input type="hidden" name="monumber" value="A4701">
+                            <button type="submit" class="btn btn-primary btn-large" style="background-color: #475b84;border-color: #475b84;">查詢</button>
+                        <p>
+                          <form method="post" action="deletemember.jsp">
+                          <input type="hidden" name="memberId" value="1">
+                          <button type="submit" class="btn btn-primary btn-large" style="position:relative;left:120px; top:-53px;background-color: #475b84;border-color: #475b84;">刪除該商品</button>
+                          </form>
+                      </p>
+                        <hr>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  </body>
+</html>

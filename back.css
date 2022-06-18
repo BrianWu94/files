@@ -1,0 +1,61 @@
+.body{
+    position:absolute;
+    width:100%;
+    font-family: "Noto Serif TC", serif;
+}
+.ttl{
+    position: absolute;
+    left:40.5%;
+    z-index: 4;  
+    top:220px;   
+}
+.carousel-item{
+    width:100%;
+}
+.buttonn{
+    position:absolute;
+    left:40%;
+    z-index: 3;
+    top:330px;
+    
+}
+.buttonn1{
+    position:absolute;
+    left:50%;
+    z-index: 3;
+    top:330px;
+}
+.buttonn2{
+    position:absolute;
+    left:50%;
+    z-index: 3;
+    top:400px;
+}
+.buttonn3{
+    position:absolute;
+    left:50%;
+    z-index: 3;
+    top:400px;
+}
+.buttonn4{
+    position:absolute;
+    left:50%;
+    z-index: 3;
+    top:500px;
+}
+.btn{
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#af9f8c;
+}
+
+
+.f_text{
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.btn btn-outline-dark{
+    background-color: brown;
+}

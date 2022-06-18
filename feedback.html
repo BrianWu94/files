@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們</title>
+    <link rel="stylesheet" href="feedback.css" type="text/css">
+<style>
+    @import url("csscode.css");
+</style>
+    
+</head>
+
+<body>
+    <header>
+        <h1>
+            <ul class="bg1">
+                <span class="real-title">&nbsp&nbsp&nbsp&nbsp親愛的小宇宙</span>
+            </ul>
+            <div class="box">
+                <div class="searchbox">          
+                    <input type="search" id="search" placeholder="好物名稱" />
+                    <button class="icon">搜尋</button>
+                </div>
+            </div>
+            <td>
+                <div class="login">
+                    <input type="button" value="登入/註冊" onclick="location.href='login.html'">
+                </div>
+            </td>
+            <td class="shopcar">
+                <a href="shopcar.html"> <img src="購物車.png" style="width:50px;height:50px;position:absolute;right:250px;top:40px;"/></a>
+            </td>
+        </h1>
+        <table class="list">
+            <tbody>
+                <ul>
+                    <ul class="drop-down-menu">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="#">商店</a>
+                            <ul>
+                                <li><a href="handmade.html">手作耳環</a>
+                                </li>
+                                <li><a href="Dangle.html">垂墜耳環</a>
+                                </li>
+                                <li><a href="Close-ear.html">貼耳耳環</a>
+                                </li>
+                                <li><a href="Handpainted.html">手繪耳環</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">宇宙的小故事</a>
+                        </li>
+                        <li><a href="feedback.html">聯絡我們</a>
+                        </li>
+                        <li><a href="problem.html">常見問題</a>
+                        </li>
+                        <li><a href="us.html">關於我們</a>
+                        </li>
+                    </ul>
+                </ul>
+             </tbody>
+        </table>
+            </header>
+    <section class="g">
+        <div>
+            <div class="az">
+                <h1>Contact Us</h1>
+                <div> <img class="pp1" src="星球1.png"></div>
+            </div>
+            
+            <div class="c">
+                <form action="" method="post" onsubmit="return false;">
+                    <input type="text" id="username" name="username" value="" placeholder="會員姓名" class="BG-Copy"
+                        size="60" /><br>
+                    <input type="text" id="useremail" name="useremail" value="" placeholder="email" class="BG-Copy"
+                        size="60" />
+                    <br>
+                    <textarea type="feedback" id="feedback" rows="9" cols="56" placeholder="想說甚麼都可以" class="BG-Copy"
+                        style="border:2px #a0c5ee solid;"></textarea>
+                    <br>
+                    <input type="submit" value="送出" class="Base" style="text-align:center;" onclick="
+                        processFormData();addMsg()" />
+                </form>
+            </div>
+            </div>
+
+
+        </div>
+        <button class="js-back-to-top back-to-top" title="回到頂部">&#65085;</button>
+
+                        <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+                        <script>
+                            $(function () {
+        
+                                var $win = $(window);
+        
+                                var $backToTop = $('.js-back-to-top');
+        
+                                // 當用戶滾動到離頂部100像素時，展示回到頂部按鈕
+        
+                                $win.scroll(function () {
+        
+                                    if ($win.scrollTop() > 100) {
+        
+                                        $backToTop.show();
+        
+                                    } else {
+        
+                                        $backToTop.hide();
+        
+                                    }
+        
+                                });
+        
+                                // 當用戶點擊按鈕時，通過動畫效果返回頭部
+        
+                                $backToTop.click(function () {
+        
+                                    $('html, body').animate({
+                                        scrollTop: 0
+                                    }, 200);
+                                });
+                            });
+                        </script>
+    </section>
+    <footer>
+        <img src="bgphoto.jpg" class="img-a">
+        <div class="t1">
+         <a href="https://www.facebook.com/%E8%A6%AA%E6%84%9B%E7%9A%84%E5%AE%87%E5%AE%99-DEAR-MY-Univers-1858229524222710/">
+             <img src="fb.png"></a>
+         <a href="https://www.pinkoi.com/store/dearunivers"><img src="pinkoi.png"></a>
+         <a href="https://www.instagram.com/hana76112/"><img src="IG.png"></a>
+     </div>
+    </footer>
+</body>
+
+
+
+</html>

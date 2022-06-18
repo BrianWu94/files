@@ -1,0 +1,36 @@
+.body{
+    position:absolute;
+    width:100%;
+    font-family: "Noto Serif TC", serif;
+    padding: 0;
+    margin: 0;
+}
+.hd{
+    margin-left:30px;
+    margin-top:-200px;
+    position:relative;
+    background-color:	#FFED97;
+    width:10%;
+}
+
+.ttd{
+    background-color: #f5efe9;
+    border-radius: .3rem;
+    margin: 80px 50px;
+    padding: 50px 60px;
+}
+.container-fluid{
+    position:relative;
+    top:-100px;
+}
+.ttlword{
+    font-size: 48px;
+    font-weight: bold;
+}
+.f_text{
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
+
+

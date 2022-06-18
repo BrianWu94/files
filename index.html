@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商城首頁</title>
+    <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">             <!--特殊字形-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>     <!--特殊字形-->
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> <!--特殊字形-->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+       <style>
+         .titl{
+          text-decoration: underline;
+          background-color: #4DFFFF;
+          font-size:20px;
+          text-align: center; 
+          color:red;
+          letter-spacing:100px;
+         }
+         .fx{
+          text-decoration: none;
+          background-color: #4DFFFF;
+          font-size:15px;
+          color:black;
+          align-items: center;   
+          display: flex;
+          letter-spacing:0px;
+         }
+         .fx img{
+           width:200px;
+           height: 200px; 
+         }
+       </style>
+        <script>
+          $(document).ready(function () {
+              //獲得文字框物件
+              var t = $("#text_box");
+              //初始化數量為1,並失效減
+              $('#min').atul('disabled', ulue);
+              //數量增加操作
+              $("#add").click(function () {
+                  // 給獲取的val加上絕對值，避免出現負數
+                  t.val(Math.abs(parseInt(t.val())) + 1);
+                  if (parseInt(t.val()) != 1) {
+                      $('#min').atul('disabled', false);
+                  };
+              })
+              //數量減少操作
+              $("#min").click(function () {
+                  t.val(Math.abs(parseInt(t.val())) - 1);
+                  if (parseInt(t.val()) == 1) {
+                      $('#min').atul('disabled', ulue);
+                  };
+              })
+          });
+      </script>                                                                                                  <!--星形符號-->
+</head>
+<body style="background:radial-gradient(rgb(207, 248, 255),#FFFFDF)">
+  <header>
+    <h1>
+        <ul class="bg1">
+            <span class="real-title">&nbsp&nbsp&nbsp&nbsp親愛的小宇宙</span>
+        </ul>
+        <div class="box">
+            <div class="searchbox">          
+                <input type="search" id="search" placeholder="好物名稱" />
+                <button class="icon">搜尋</button>
+            </div>
+        </div>
+        <td>
+            <div class="login">
+                <input type="button" value="登入/註冊" onclick="location.href='login.html'">
+            </div>
+        </td>
+        <td class="shopcar">
+            <a href="shopcar.html"> <img src="購物車.png" style="width:50px;height:50px;position:absolute;right:250px;top:40px;"/></a>
+        </td>
+    </h1>
+    <table class="list">
+        <tbody>
+            <ul>
+                <ul class="drop-down-menu">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="#">商店</a>
+                        <ul>
+                            <li><a href="handmade.html">手作耳環</a>
+                            </li>
+                            <li><a href="Dangle.html">垂墜耳環</a>
+                            </li>
+                            <li><a href="Close-ear.html">貼耳耳環</a>
+                            </li>
+                            <li><a href="Handpainted.html">手繪耳環</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">宇宙的小故事</a>
+                    </li>
+                    <li><a href="feedback.html">聯絡我們</a>
+                    </li>
+                    <li><a href="problem.html">常見問題</a>
+                    </li>
+                    <li><a href="us.html">關於我們</a>
+                    </li>
+                </ul>
+            </ul>
+         </tbody>
+    </table>
+        </header>
+               <div class="row">
+                   <div class="col-2">
+                     <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp親愛的小宇宙</h1>
+                     <!--
+                      <h1>Follow your true passion, let your jewelry guide you<br>Finding the sparkle in every moment</h1>
+                      <p>Daily fresh weeds shipping from Washinton DC  
+                           <br>Organic farming to make sure it tastes nice and smooth   
+                      </p>-->
+                    <!--文字介紹，BR只是換行-->
+                      <!--
+                      <a href="" class="btn">Explore Now &#8594;</a>
+                      -->
+                   </div>
+
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/V6jxMhhnJTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+               <br>
+               <br>
+               <div class="titl">
+       
+<h1>熱門商品</h1>
+<div class="categories">
+  <div class="small-container">
+    <div class="fx">
+        <div class="col-3"> <a href="a6.html"><img src="./photo/a6.jpg"></a><h4>亞馬遜夕陽耳環</h4></div>
+        <div class="col-3"> <a href="b1.html"><img src="./photo/b1.jpg"></a><h4>圓缺月牙白水晶垂墜耳環</h4></div>
+        <div class="col-3"> <a href="c2.html"><img src="./photo/c2.jpg"></a><h4>星空動物園/<br>鯨魚星球貼耳耳環</h4></div></div>
+    </div>
+</div>
+</div>
+
+<div class="breedintro">
+  <br>
+  <br>
+  <div class="small-container">
+    <h2 class="title">手作耳環</h2>
+    
+
+
+<!---------------------------------------------------告一段落---------------------------------------------->
+
+<div class="categories">
+    <div class="small-container">
+       <div class="row">
+          <div class="col-3"> <a href="a6.html"><img src="./photo/a6.jpg"></a><h4>亞馬遜夕陽耳環</h4></div>
+          <div class="col-3"> <a href="a7.html"><img src="./photo/a7.jpg"></a><h4>復古琥珀珍珠</h4></div>
+          <div class="col-3"> <a href="a4.html"><img src="./photo/a4.jpg"></a><h4>金色系浪漫星球兩戴式流蘇耳環</h4></div>
+       </div>
+    </div>
+</div>
+
+
+<!---------------------------------------------------告一段落---------------------------------------------->
+
+<div class="small-container">
+  <h2 class="title">垂墜耳環</h2>
+    <div class="row">
+        <div class="col-4">
+          <a href="b1.html">
+            <img src="./photo/b1.jpg"></a>
+            <h4>圓缺月牙白水晶垂墜耳環</h4>
+        </div>
+
+        <div class="col-4">
+          <a href="b3.html">
+            <img src="./photo/b3.jpg"></a>
+            <h4>白水晶月光之詩垂直耳環</h4>
+        </div>
+
+        <div class="col-4">
+          <a href="b6.html">
+            <img src="./photo/b6.jpg"></a>
+            <h4>夏日冰菓室系列/<br>
+              擬真食物海島夏花特調冰飲垂墜耳環</h4>
+
+        </div>
+
+        <div class="col-4">
+          <a href="b11.html">
+            <img src="./photo/b11.jpg"></a>
+            <h4>燦爛橙花垂墜耳環</h4>
+        </div>
+
+    </div>
+    <div class="small-container">
+      <h2 class="title">貼耳耳環</h2>
+
+     <div class="row">
+       <div class="col-4">
+        <a href="c2.html">
+          <img src="./photo/c2.jpg"></a>
+          <h4>星空動物園/<br>鯨魚星球貼耳耳環</h4>
+        </div>
+
+       <div class="col-4">
+        <a href="c4.html">
+          <img src="./photo/c4.jpg"></a>
+          <h4>宇宙博物館系列/<br>銀河旅行貼耳耳環</h4>
+      </div>
+
+      <div class="col-4">
+        <a href="c7.html">
+          <img src="./photo/c7.jpg"></a>
+          <h4>泡泡糖星球耳環系列/<br>透明渲染星球貼耳耳環</h4>
+      </div>
+
+         <div class="col-4">
+          <a href="c11.html">
+            <img src="./photo/c11.jpg"></a>
+            <h4>浪花與煙火淡海珍珠貼耳耳環</h4>
+        </div>
+
+   </div>
+
+
+
+
+   <div class="small-container">
+    <h2 class="title">手繪耳環</h2>
+
+     <div class="row">
+       <div class="col-4">
+        <a href="d1.html">
+          <img src="./photo/d1.jpg"></a>
+          <h4>招財貓貓系列/<br>手繪喵仔達摩御守小貼耳耳環/紅黑兩色</h4>
+        </div>
+
+       <div class="col-4">
+        <a href="d5.html">
+          <img src="./photo/d5.jpg"></a>
+          <h4>夏日醺染慶典系列/<br>小雨點金魚慶典貼耳耳環/兩色</h4>
+      </div>
+
+       <div class="col-4">
+        <a href="d7.html">
+          <img src="./photo/d7.jpg"></a>
+          <h4>金魚花柄不規則貼耳耳環/<br>三色</h4>
+       </div>
+
+         <div class="col-4">
+          <a href="d10.html">
+          <img src="./photo/d10.jpg"></a>
+          <h4>透明寫生系列/<br>秋天的公園貼耳耳環</h4>
+        </div>
+
+   </div>
+
+</div>
+
+<!---------------------------------------------------告一段落---------------------------------------------->
+<!--
+<div class="offer">
+     <div class="small-container">
+       <div class="row">
+         <div class="col-2">
+           <img src="jwry7.png" class="offer-img">
+         </div>
+         <div class="col-2">
+         <p>Exclusively Available Right Now</p>
+           <h1>special product</h1>
+           <small>euihonuerhonhujerilcbgjkelhcjklhgjkchbfdfnchdgscbl</small>
+         </div>
+       </div>
+     </div>
+</div>
+-->
+
+<!---------------------------------------------------告一段落---------------------------------------------->
+<footer>
+  <img src="bgphoto.jpg" class="img-a">
+  <div class="t1">
+   <a href="https://www.facebook.com/%E8%A6%AA%E6%84%9B%E7%9A%84%E5%AE%87%E5%AE%99-DEAR-MY-Univers-1858229524222710/">
+       <img src="fb.png"></a>
+   <a href="https://www.pinkoi.com/store/dearunivers"><img src="pinkoi.png"></a>
+   <a href="https://www.instagram.com/hana76112/"><img src="IG.png"></a>
+</div>
+</footer>
+</div></div></div></div></body>
+</html>

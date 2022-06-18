@@ -1,0 +1,30 @@
+.profile{
+    padding-top: 100px;
+}
+
+.profile .col-4{
+    text-align: center;
+    padding:100px 50px;
+    box-shadow: 0 0 20px 0px rgb(6, 6, 5);
+    cursor: pointer;
+    transition: transfo;
+    background:radial-gradient(rgb(241, 253, 255),#cb7c43) ; 
+}
+
+
+
+
+.profile .col-4 img{
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.profile .col-4:hover{
+    transform: translateY(-30px);
+}
+
+.a{
+    font-size: larger;
+    font-style: oblique;
+}

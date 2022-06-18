@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品資訊</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="jquery.star-rating-svg.js"></script>
+  <script src="jquery.star-rating-svg.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <style>
+        @import url("csscode.css");
+        @import url("about.css");
+        </style>
+            <script>
+                $(document).ready(function () {
+                    //獲得文字框物件
+                    var t = $("#text_box");
+                    //初始化數量為1,並失效減
+                    $('#min').atul('disabled', ulue);
+                    //數量增加操作
+                    $("#add").click(function () {
+                        // 給獲取的val加上絕對值，避免出現負數
+                        t.val(Math.abs(parseInt(t.val())) + 1);
+                        if (parseInt(t.val()) != 1) {
+                            $('#min').atul('disabled', false);
+                        };
+                    })
+                    //數量減少操作
+                    $("#min").click(function () {
+                        t.val(Math.abs(parseInt(t.val())) - 1);
+                        if (parseInt(t.val()) == 1) {
+                            $('#min').atul('disabled', ulue);
+                        };
+                    })
+                });
+            </script>
+</head>
+<body>
+    <header>
+        <h1>
+            <ul class="bg1">
+                <span class="real-title">&nbsp&nbsp&nbsp&nbsp親愛的小宇宙</span>
+            </ul>
+            <div class="box">
+                <div class="searchbox">          
+                    <input type="search" id="search" placeholder="好物名稱" />
+                    <button class="icon">搜尋</button>
+                </div>
+            </div>
+            <td>
+                <div class="login">
+                    <input type="button" value="登入/註冊" onclick="location.href='login.html'">
+                </div>
+            </td>
+            <td class="shopcar">
+                <a href="shopcar.html"> <img src="購物車.png" style="width:50px;height:50px;position:absolute;right:250px;top:40px;"/></a>
+            </td>
+        </h1>
+        <table class="list">
+            <tbody>
+                <ul>
+                    <ul class="drop-down-menu">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="#">商店</a>
+                            <ul>
+                                <li><a href="handmade.html">手作耳環</a>
+                                </li>
+                                <li><a href="Dangle.html">垂墜耳環</a>
+                                </li>
+                                <li><a href="Close-ear.html">貼耳耳環</a>
+                                </li>
+                                <li><a href="Handpainted.html">手繪耳環</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">宇宙的小故事</a>
+                        </li>
+                        <li><a href="feedback.html">聯絡我們</a>
+                        </li>
+                        <li><a href="problem.html">常見問題</a>
+                        </li>
+                        <li><a href="us.html">關於我們</a>
+                        </li>
+                    </ul>
+                </ul>
+             </tbody>
+        </table>
+            </header>
+            <section>
+                <table class="story">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h2 class="ml2">宇宙的故事</h2>
+        
+                                <p>
+                                    🦄手作物飾品 /handmade/乾燥花/dried flowers/Natural crystal /設計小物 宇宙系 <br>
+                                    每一朵花是獨一無二的 每一顆礦石也是獨一無二 每一個設計也都是獨一無二的 而你的存在也是。<br>
+                                    這裏有各種我喜歡的元素設計的各種飾品和設計小物~希望每個人都能在這找到屬於你的獨一無二~!
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pp1">
+                    <img src="星球1.png">
+                </div>
+                <div class="pp2">
+                    <img src="星球2.png">
+                </div>
+       </section>
+       <footer>
+           <img src="bgphoto.jpg" class="img-a">
+           <div class="t1">
+            <a href="https://www.facebook.com/%E8%A6%AA%E6%84%9B%E7%9A%84%E5%AE%87%E5%AE%99-DEAR-MY-Univers-1858229524222710/">
+                <img src="fb.png"></a>
+            <a href="https://www.pinkoi.com/store/dearunivers"><img src="pinkoi.png"></a>
+            <a href="https://www.instagram.com/hana76112/"><img src="IG.png"></a>
+        </div>
+       </footer>
+    </body>
+</html>
